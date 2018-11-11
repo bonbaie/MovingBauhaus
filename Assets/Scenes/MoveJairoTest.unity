@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 63883412}
   - component: {fileID: 63883407}
   m_Layer: 0
-  m_Name: CircleClear
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.028192997}
   serializedVersion: 2
-  m_Radius: 0.45156747
+  m_Radius: 0.33709455
 --- !u!50 &63883408
 Rigidbody2D:
   serializedVersion: 4
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e9600ac01de1b4d976051e6e1b6442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  PlayerMoveSpeed: 100
 --- !u!114 &63883412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074abc45638b1974babad32dc539121c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 400
+  PlayerJumpPower: 3
 --- !u!1 &80095484
 GameObject:
   m_ObjectHideFlags: 0

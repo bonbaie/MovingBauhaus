@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerJamped : MonoBehaviour {
 
-    [SerializeField] float jumpPower = 100f;
+    public float PlayerJumpPower;//This Variavle Jumppower :ジャンプで上方向にかける強さを決めます。
     bool jump;
     private Rigidbody2D rb;
 
     // Use this for initialization
     void Start () {
+
         rb = GetComponent<Rigidbody2D>();
         bool jump = true;
     }
@@ -18,7 +19,7 @@ public class PlayerJamped : MonoBehaviour {
 	void Update () {
         if (Input.GetMouseButtonDown(0) && !jump)
         {
-            rb.AddForce(Vector2.up * jumpPower);
+            rb.AddForce(Vector2.up * PlayerJumpPower);
             jump = true;
         }
     }
