@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class JairoTest : MonoBehaviour {
 
-    public float speed = 5.0f;
+    public float PlayerMoveSpeed;//This Variavle Speed Power;速度の変数です。
 
+    void Start()
+    {
+
+    }
     void Update()
     {
-        
 
-        var dir = Vector2.zero;
+        var dir = Vector3.zero;
+
         dir.x = Input.acceleration.x;
-        dir.y = Input.acceleration.y;
 
-        if(dir.sqrMagnitude > 1)
-        {
+        if (dir.sqrMagnitude > 1)
             dir.Normalize();
-        }
 
         dir *= Time.deltaTime;
 
-        transform.Translate(dir * speed);
-
+        // Move object
+        transform.Translate(dir * PlayerMoveSpeed);
 
     }
 }
