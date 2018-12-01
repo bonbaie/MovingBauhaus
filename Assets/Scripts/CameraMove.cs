@@ -1,30 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraMove : MonoBehaviour {
 
-    public GameObject player;
+    public float dampTime = 0.125f;
+    public Vector3 offset;
 
-    // Use this for initialization
-    void Start()
+    public Transform target;
+
+    void FixedUpdate()
     {
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp (transform.position, desiredPosition, dampTime);
+        transform.position = smoothedPosition;
 
+        transform.LookAt(target);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = new Vector3(player.transform.position.x, 5, -10);
-
-        if (transform.position.x < 0)
-        {
-            transform.position = new Vector3(0, 5, -10);
-        }
-
-        if (transform.position.x >= 18)
-        {
-            transform.position = new Vector3(18, 5, -10);
-        }
-    }
 }
