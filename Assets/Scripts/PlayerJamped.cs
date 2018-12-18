@@ -121,7 +121,7 @@ public class PlayerJamped : MonoBehaviour {
             v.x = PlayerMaxSpeed * Time.deltaTime;
             rb.velocity = v;                                        //Limit Player speed to PlayerMaxSpeed
         }
-        Debug.Log(rb.velocity);
+        //Debug.Log(rb.velocity);
     }
    
 }
