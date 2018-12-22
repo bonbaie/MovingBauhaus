@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Triangle.unity
     guid: 387a5cecdb2f76e43a4a6fe36bb2cc79
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MoveJairoTest.unity
     guid: e7edc827efbda6e4f8565ab651c865bb
   - enabled: 1
     path: Assets/Scenes/ColorCycle.unity
     guid: 2f64bc4bfe959bd4782416bdc997c701
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 8ed18c38f40237343abc88627f6857c9
+  - enabled: 1
+    path: Assets/Scenes/PlaySection.unity
+    guid: 9b2ba4a8652089b4ba650921a43c5dc3
   m_configObjects: {}

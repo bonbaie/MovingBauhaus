@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 313816970}
   m_Layer: 0
   m_Name: ColorCiecles
-  m_TagString: ColorCircle
+  m_TagString: ColorCieclesCool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
