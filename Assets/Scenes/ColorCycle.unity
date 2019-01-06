@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 0.210231, y: 0.23688, z: 0.23688}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &313816970
 CircleCollider2D:
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 342827097}
   m_Layer: 0
   m_Name: Darkup1
-  m_TagString: Untagged
+  m_TagString: Maker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,11 +226,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342827096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -3.619825, z: 0}
+  m_LocalPosition: {x: 0.91, y: -2.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455631753
 GameObject:
@@ -270,7 +270,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696317871}
-  - component: {fileID: 696317870}
   m_Layer: 0
   m_Name: ColorTarget
   m_TagString: Untagged
@@ -278,21 +277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &696317870
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 696317869}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!4 &696317871
 Transform:
   m_ObjectHideFlags: 0
@@ -304,7 +288,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &789228458
 GameObject:
@@ -442,7 +426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4942233166560294, guid: 027959bbc882bec4ab6330174a9e9c81, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03095293
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4942233166560294, guid: 027959bbc882bec4ab6330174a9e9c81, type: 2}
       propertyPath: m_LocalPosition.z
@@ -516,7 +500,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4294194826114058, guid: 7f7ab57812b29a948bab361980c1a75e, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114110362771782136, guid: 7f7ab57812b29a948bab361980c1a75e,
         type: 2}
@@ -660,12 +644,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1435324320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 10.3, z: 0.3479721}
+  m_LocalPosition: {x: -8.96, y: -1.4, z: 0.3479721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 455631754}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1435324326
 MonoBehaviour:
@@ -729,6 +713,34 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 492dd8fef2c7a2d4488bc9721d259fbd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1827627202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827627203}
+  m_Layer: 0
+  m_Name: DarkTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1827627203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827627202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7, y: -4.34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877879324
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,11 +749,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1877879326}
-  - component: {fileID: 1877879325}
   - component: {fileID: 1877879327}
+  - component: {fileID: 1877879325}
   - component: {fileID: 1877879328}
   m_Layer: 0
-  m_Name: ColorCiecles
+  m_Name: ColorCieclesCool
   m_TagString: ColorCircle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,11 +812,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877879324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 3.5, z: 0}
+  m_LocalPosition: {x: -4.3, y: 0, z: 0}
   m_LocalScale: {x: 0.23664, y: 0.23664, z: 0.23664}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1877879327
 MonoBehaviour:
@@ -817,8 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d299f6aef8d544d947ff89da416327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 1
-  endPosition: {x: 0, y: 0}
 --- !u!58 &1877879328
 CircleCollider2D:
   m_ObjectHideFlags: 0

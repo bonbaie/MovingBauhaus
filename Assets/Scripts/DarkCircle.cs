@@ -19,8 +19,7 @@ public class DarkCircle : MonoBehaviour {
     {
         if (collision.gameObject.tag == "ColorCircle")
         {
-            Debug.Log("あたった。");
-            //this.gameObject.transform.Translate(0.7f, -3.0f * Time.deltaTime, 0.0f); 
+           
         }
     }
 }
