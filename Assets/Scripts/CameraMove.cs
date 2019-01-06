@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour {
 
+<<<<<<< HEAD
     public GameObject player;
 
     // Use this for initialization
     void Start()
     {
+=======
+    public float dampTime = 0.125f;
+    public Vector3 offset;
+    private Vector3 velocity = Vector3.zero;
+
+    public Transform target;
+
+    void LateUpdate()
+    {
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.SmoothDamp (transform.position, desiredPosition,ref velocity, dampTime);
+        transform.position = smoothedPosition;
+>>>>>>> Simon
 
     }
 
