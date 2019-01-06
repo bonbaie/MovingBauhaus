@@ -11,6 +11,7 @@ TagManager:
   - ColorCircle
   - ColorCiecleDamy
   - ColorCieclesCool
+  - Maker
   layers:
   - Default
   - TransparentFX
