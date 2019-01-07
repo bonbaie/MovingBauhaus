@@ -1,8 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class ColorCircle : MonoBehaviour
+public class ColorCircleUp : MonoBehaviour
 {
+
     private GameObject playerobj;
     private GameObject darcirobj;
     private GameObject targetobj;
@@ -20,8 +22,8 @@ public class ColorCircle : MonoBehaviour
     {
         playerobj = GameObject.Find("Player");
         darcirobj = GameObject.Find("DarkCircle");
-        targetobj = GameObject.Find("ColorTargetDown");
-        darktarget = GameObject.Find("DarkTarget");
+        targetobj = GameObject.Find("ColorTargetUp");
+        darktarget = GameObject.Find("DarkTargetUp");
 
         colorcol = this.gameObject.GetComponent<CircleCollider2D>();
         darkcircol = darcirobj.GetComponent<CircleCollider2D>();
@@ -49,7 +51,7 @@ public class ColorCircle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-      if(collision.gameObject.tag == "DarkCircle")
+        if (collision.gameObject.tag == "DarkCircle")
         {
             intodarkflag = 1;
         }
@@ -59,7 +61,7 @@ public class ColorCircle : MonoBehaviour
             //intodarkflag = 0;
         }
 
-      if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             this.gameObject.transform.parent = playerobj.transform;
         }
