@@ -6,7 +6,6 @@ public class JairoTest : MonoBehaviour {
 
     public float PlayerMoveSpeed;//This Variavle Speed Power;速度の変数です。
 
-
     void Start()
     {
 
@@ -16,13 +15,13 @@ public class JairoTest : MonoBehaviour {
 
         var dir = Vector3.zero;
 
-        dir.x = (Input.acceleration.x + Input.acceleration.z) /2;
+        dir.x = Input.acceleration.x;
 
         if (dir.sqrMagnitude > 1)
-           dir.Normalize();
+            dir.Normalize();
 
         dir *= Time.deltaTime;
-        Debug.Log("X = " + dir.x + " Z = " + dir.z);
+
         // Move object
         transform.Translate(dir * PlayerMoveSpeed);
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManeger : MonoBehaviour {
 
-    public float PlayerJumpPower;//This Variavle Jumppower :ジャンプで上方向にかける強さを決めます。
+    public float sPlayerJumpPower;//This Variavle Jumppower :ジャンプで上方向にかける強さを決めます。
     public float PlayerMoveSpeed;//This Variavle Speed Power;速度の変数です。
 
     // Use this for initialization
