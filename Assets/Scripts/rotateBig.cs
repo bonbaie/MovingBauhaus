@@ -8,6 +8,7 @@ public class rotateBig : MonoBehaviour {
     public float rotSpeed;
     public float zRotation;
     public float waitTime;
+    public Player player;
 
     [HideInInspector]
     public bool playerOnPlatform = false;
@@ -31,11 +32,20 @@ public class rotateBig : MonoBehaviour {
 
         if (playerOnPlatform == true)
         {
+            player.GetComponent<Rigidbody2D>().gravityScale = 0;
+            //player.transform.SetParent(transform);
             rotateTriangle = true;
         }
         else if (transform.rotation == desiredRot && playerOnPlatform == false)
         {
+            player.GetComponent<Rigidbody2D>().gravityScale = 1;
+            //player.transform.SetParent(null);
             rotateTriangle = false;
+        }
+        else if (playerOnPlatform == false)
+        {
+            player.GetComponent<Rigidbody2D>().gravityScale = 1;
+            //player.transform.SetParent(null);
         }
 
         if (rotateTriangle == true)
@@ -44,7 +54,7 @@ public class rotateBig : MonoBehaviour {
         }
         else if (rotateTriangle == false)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, startRot, rotSpeed * Time.deltaTime); ;
+            transform.rotation = Quaternion.Lerp(transform.rotation, startRot, rotSpeed * Time.deltaTime); 
         }
 
 

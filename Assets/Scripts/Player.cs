@@ -106,11 +106,11 @@ public class Player : MonoBehaviour {
 
         var accelForceLeft = Vector2.left * PlayerSpeed * 10f * Time.deltaTime;
         var moveForceLeft = Vector2.left * PlayerSpeed * 2f * Time.deltaTime;
-        var jumpForceLeft = Vector2.left * PlayerSpeed * 0.5f * Time.deltaTime;
+        var jumpForceLeft = Vector2.left * PlayerSpeed * 3f * Time.deltaTime;
 
         var accelForceRight = Vector2.right * PlayerSpeed * 10 * Time.deltaTime;
         var moveForceRight = Vector2.right * PlayerSpeed * 2f * Time.deltaTime;
-        var jumpForceRight = Vector2.right * PlayerSpeed * 0.5f * Time.deltaTime;
+        var jumpForceRight = Vector2.right * PlayerSpeed * 3f * Time.deltaTime;
 
 
 

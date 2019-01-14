@@ -73,6 +73,7 @@ public class FlyingPlatform : MonoBehaviour {
         {
             playerOnPlatform = true;
             player.transform.SetParent(transform);
+            player.GetComponent<Rigidbody2D>().gravityScale = 0;
         }
     }
 
@@ -81,5 +82,6 @@ public class FlyingPlatform : MonoBehaviour {
     {    
         playerOnPlatform = false;
         player.transform.SetParent(null);
+        player.GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 }
